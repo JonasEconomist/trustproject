@@ -1,1 +1,1 @@
-web: trustprojecteconomist
+web: trustProjectEconomist
