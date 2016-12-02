@@ -167,9 +167,17 @@ func main() {
 		}
 	}()
 
-	err := http.ListenAndServe(":9494", nil)
+	err := http.ListenAndServe(getPort(), nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
 	os.Exit(1)
+}
+
+func getPort() string {
+	var port = os.Getenv("PORT")
+	if port == "" {
+		port = "9494"
+	}
+	return ":" + port
 }
