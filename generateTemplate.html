@@ -9,7 +9,7 @@
 <code>
 <meta charset="utf-8">
 <div vocab="http://schema.org" typeof="Organization">
-  {{ if ne .Name "" -}}<meta property="name" content="{{ .Name}}" />{{- end -}},
+  {{ if ne .Name "" -}}<meta property="name" content="{{ .Name}}" />{{- end -}}
   {{- if ne .Description "" -}}<meta property="description" content="{{ .Description.}}" />{{- end -}}
   {{- if ne .URL "" -}}<meta property="url" content="{{ .URL}}" />{{- end -}}
   {{- if ne .FoundingDate "" -}}<meta property="foundingDate" content="{{ .FoundingDate}}" />{{- end -}}
